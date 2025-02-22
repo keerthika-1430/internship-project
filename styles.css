@@ -1,0 +1,567 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+/* Header */
+header {
+    background-color: #06f826;
+    color: rgb(14, 14, 14);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: rgb(13, 13, 13);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.discover-section {
+    background-image: url('images/download.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: white; /* Text color */
+    text-align: center;
+    padding: 50px 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fcffa1;
+}
+
+.hero h2 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #090808;
+}
+
+/* Recipe List */
+.recipe-list {
+    padding: 30px;
+    text-align: center;
+}
+
+.recipe-list h2 {
+    font-size: 24px;
+    color: #090909;
+}
+
+.recipes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.recipe-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 15px;
+    text-align: center;
+}
+
+.recipe-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.recipe-card h3 {
+    margin: 10px 0;
+    font-size: 20px;
+    color: #f32804;
+}
+
+.recipe-card p {
+    color: #0f0e0e;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #343a40;
+    color: white;
+    margin-top: 30px;
+}
+/* About Us Section */
+.about {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    max-width: 800px;
+    margin: auto;
+}
+
+.about h2 {
+    font-size: 28px;
+    color: hsl(0, 97%, 43%);
+}
+
+.about p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.about h3 {
+    font-size: 22px;
+    color: #333;
+    margin-top: 30px;
+}
+
+/* Team Section */
+.team {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.team-member {
+    background-color: #83c1ff;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    width: 180px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.team-member h4 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+    color: #ff6b6b;
+}
+
+.team-member p {
+    color: #777;
+    font-size: 14px;
+}
+
+/* Active Nav Link */
+nav ul li a.active {
+    text-decoration: underline;
+}
+/* Recipes Section */
+.recipe-list {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.recipe-list h2 {
+    font-size: 26px;
+    color: #070707;
+}
+
+.recipes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.recipe-card {
+    background-color: #f28203;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.recipe-card:hover {
+    transform: scale(1.05);
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.recipe-card h3 {
+    margin: 10px 0;
+    font-size: 20px;
+    color: #101010;
+}
+
+.recipe-card p {
+    color: hsl(0, 45%, 98%);
+    font-size: 16px;
+}
+
+/* Active Nav Link */
+nav ul li a.active {
+    text-decoration: underline;
+}
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+    max-width: 700px;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact h2 {
+    font-size: 26px;
+    color: #ff6b6b;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Contact Info */
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.info-box {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    width: 200px;
+}
+
+.info-box h3 {
+    color: #ff6b6b;
+    font-size: 18px;
+}
+
+.info-box p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-form button:hover {
+    background-color: #26ef07;
+}
+
+/* Active Nav Link */
+nav ul li a.active {
+    text-decoration: underline;
+}
+/* Recipe Page */
+.recipe-page {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.recipe-page h2 {
+    font-size: 28px;
+    color: #ff6b6b;
+    margin-bottom: 20px;
+}
+
+/* Individual Recipe */
+.recipe {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.recipe img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.recipe h3 {
+    color: #08ef6c;
+    font-size: 22px;
+}
+
+.recipe h4 {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #333;
+}
+
+.recipe ul, .recipe ol {
+    padding-left: 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+.recipe li {
+    margin-bottom: 8px;
+}
+
+/* Active Nav Link */
+nav ul li a.active {
+    text-decoration: underline;
+}
+/* Recipe Page */
+.recipe-page {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.recipe-page h2 {
+    font-size: 28px;
+    color: #ff6b6b;
+    margin-bottom: 20px;
+}
+
+/* Individual Recipe */
+.recipe {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.recipe img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.recipe h3 {
+    color: #ff6b6b;
+    font-size: 22px;
+}
+
+.recipe h4 {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #333;
+}
+
+.recipe ul, .recipe ol {
+    padding-left: 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+.recipe li {
+    margin-bottom: 8px;
+}
+
+/* Active Nav Link */
+nav ul li a.active {
+    text-decoration: underline;
+}
+/* Login Container */
+.login-container {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 400px;
+    margin: auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+    font-size: 26px;
+    color: #ff6b6b;
+    margin-bottom: 10px;
+}
+
+.login-container p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Login Form */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-form button {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.login-form button:hover {
+    background-color: #e05757;
+}
+
+/* Links */
+.login-container a {
+    color: #ff6b6b;
+    text-decoration: none;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+
+/* Active Nav Link */
+nav ul li a.active {
+    text-decoration: underline;
+}
+/* Register Container */
+.register-container {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 400px;
+    margin: auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.register-container h2 {
+    font-size: 26px;
+    color: #ff6b6b;
+    margin-bottom: 10px;
+}
+
+.register-container p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Registration Form */
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.register-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.register-form button {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.register-form button:hover {
+    background-color: #e05757;
+}
+
+/* Links */
+.register-container a {
+    color: #ff6b6b;
+    text-decoration: none;
+}
+
+.register-container a:hover {
+    text-decoration: underline;
+}
+
+/* Active Nav Link */
+nav ul li a.active {
+    text-decoration: underline;
+}
